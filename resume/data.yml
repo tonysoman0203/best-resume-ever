@@ -1,0 +1,124 @@
+/* #*/ export const PERSON = `
+name:
+  first: Tony
+  middle: Man Kit
+  last: So
+about: TODO.
+knowledge: TODO.
+
+position: Software Engineer
+
+birth:
+  year: 1993
+  location: Hong Kong
+
+experience:
+- company: HK01 Company Limited
+  position: Software Engineer
+  timeperiod: July 2018 - February 2020
+  description: Developing Hk01 Mobile App and restful service.
+  website: https://www.hk01.com
+
+- company: Green Tomato Limited
+  position: Developer (Android)
+  timeperiod: July 2016 - June 2018
+  description: Developing different mobile applications. 
+  website: https://www.gt.app
+
+- company: Social Enterprise Limited
+  position: Part-Time Programmer
+  timeperiod: January 2016 - April 2016
+  description: Developing the medical system for the nursing home.
+
+- company: The Information Technology and Health Informatics Division, Head Office of the Hospital Authority (HA)
+  position: Temporary ITD Summer Intern
+  timeperiod: June 2015 - August 2015
+  description: Developing the Android mobile staff health record application (mSHR).
+
+education:
+- degree: Bachelor of Science in Computer Science
+  timeperiod: September 2014 - July 2016
+  description: Major in Computer Science, Hong Kong Baptist University.
+  website: https://www.comp.hkbu.edu.hk/v1/?page=prospective_stud_info_cstisa
+
+- degree: Higher Diploma in Network and Mobile Computing
+  timeperiod: September 2012 - July 2014
+  description: Major in Network and Mobile Computing, School of Continuing and Professional Studies, CUHK.
+
+# skill level goes 0 to 100
+skills:
+- name: Amazon S3
+- name: CSharp
+- name: CSS3
+- name: Docker
+- name: ESNext
+- name: Firebase
+- name: GoogleTagManager
+- name: Google Vision
+- name: HTML5
+- name: Java
+- name: JavaScript
+- name: Kotlin
+- name: MySQL
+- name: Node.js
+- name: Objective-C
+- name: PHP
+- name: ReactNative
+- name: Redis
+- name: Swift
+- name: Travis.CI
+- name: TypeScript
+
+projects:
+- name: HK01 Mobile App
+  platform: ReactNative
+  description: providing news and multimedia lifestyle internet platform including running, charity
+  url:  https://www.hk01.com/app
+
+- name: HK01 Account-System & Api Gateway
+  platform: typescript + express
+  description: an backend system to store member information and provide related service, i.e. user login, third party login, get profile, send OTP with email and phone
+
+- name: Link Park & Dine
+  platform: Android
+  description: an application that providing indoor navigation, parking, and shopping information 
+  url:  https://play.google.com/store/apps/details?id=com.linkhk.app.android.parkanddine&hl=en_US
+
+- name: New World Construction Fun Circle
+  platform: Android
+  description: providing a platform for contruction workers to organize, participate events and exchange presents
+  
+- name: Pizza Hut App (TW) 
+  platform: Android
+  description: an mobile member card to accumulate the member point to exchange food combining with KFC and PizzaHut in Taiwan
+  url:  https://play.google.com/store/apps/details?id=tw.com.pkcard&hl=zh_HK
+
+- name: Tahoe Life Life-Proposal-System
+  platform: Android / ReactNative / Web
+  description: an application to help agents and bank suggest customer buying insurance and rider products and generate proposals in pdf format
+
+- name: Tahoe Life T-Verify 泰易認
+  platform: React-Native
+  description: an application to basically input customer names and upload identity documents, i.e. HKID Card, Mainland Travel Permit to verify identity
+
+hobbies:
+- name: Video Games
+  iconClass: fa fa-gamepad
+  url: https://example.com
+
+- name: Drawing
+  iconClass: fa fa-pencil
+  url: https://example.com
+
+contact:
+  email: somankit2000@gmail.com
+  phone: 852 68916651
+  linkedin: https://www.linkedin.com/in/tony-so-63124412a/
+  website: https://tonysoman0203.github.io/me/ # TODO change to shorten link
+  github: tonysoman0203
+
+salary: HKD 25K - 30K
+available: Negotiable
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+lang: en
+`
