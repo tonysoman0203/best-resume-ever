@@ -3,7 +3,7 @@
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
-      <div v-if="person.birth" class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div>
+      <!-- <div v-if="person.birth" class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div> -->
     </div>
 
     <div class="content">
@@ -14,12 +14,35 @@
           </div>
 
           <div class="section-content section-content--plain">
-            {{ person.about }}
+             <span
+              :key="index"
+              v-for="(about, index) in person.about">
+                {{about.name}}
+             </span>
             <br/>
+             <div class="section-headline">
+              {{ lang.career }}
+            </div>
+            {{person.career}}
             <br/>
-            {{ person.knowledge }}
-            <br/>
+          </div>
+
+          <div class="section">
+          <div class="section-headline">
+            {{ lang.knowledge}}
           </div>  
+          <div class="section-content-grid">
+          <a
+            v-for="(knowledge, index) in person.knowledge"
+            class="grid-item"
+            :key="index"
+          >
+            <span class="squarred-grid-item">
+              {{ knowledge.name }}
+            </span>
+          </a>
+          </div> 
+          </div>
         </div>
 
         <div
@@ -109,6 +132,25 @@
               <span class="section-content__text"> {{ contribution.description }} </span>
               <span class="section-content__text--light" style="word-break: break-all;">
                 {{ contribution.url }}
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          v-if="person.hobbies"
+          class="section">
+          <div class="section-headline">
+            {{ lang.hobbies }}
+          </div>
+
+          <div class="section-content-grid">
+            <a
+              v-for="(hobbies, index) in person.hobbies"
+              class="grid-item"
+              :key="index" >
+              <span class="squarred-grid-item">
+                {{ hobbies.name }}
               </span>
             </a>
           </div>
@@ -211,10 +253,10 @@ export default Vue.component(name, getVueOptions(name));
 @accent-color: #34495E;
 @banner-color: #42b883;
 @banner-height: 50px;
-@picture-size: 100px;
-@picture-offset: 35px;
+@picture-size: 75px;
+@picture-offset: 10px;
 @base-padding: 25px;
-@left-column-width: 300px;
+@left-column-width: 275px;
 
 a {
   color: inherit;
