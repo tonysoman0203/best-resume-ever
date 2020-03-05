@@ -3,8 +3,6 @@ name:
   first: Tony
   middle: Man Kit
   last: So
-about: TODO.
-knowledge: TODO.
 
 position: Software Engineer
 
@@ -12,11 +10,25 @@ birth:
   year: 1993
   location: Hong Kong
 
+about: 
+- name: Hi. I am Tony So. I am a Christian and professional software engineer. 
+- name: To briefly introduce myself, i am a easy, hard-working, and quick learner with a a keen eye for detail.
+- name: I am also willing to be humble myself and jump over my comfort zone to experience with any challenges.
+- name: Treating colleagues as my friends is my attitude with my honesty and kindliness.
+career: As Steve Jobs said, "stay hungry stay foolish", For me, it becomes "stay hungry, stay foolish, stay professional".
+
+knowledge: 
+- name: GoogleTagManager
+- name: FB AppEvents
+- name: Firebase
+- name: Amazon S3
+- name: GoogleVision
+
 experience:
 - company: HK01 Company Limited
   position: Software Engineer
   timeperiod: July 2018 - February 2020
-  description: Developing Hk01 Mobile App and restful service.
+  description: Developing Hk01 Mobile App and restful service, keen to use latest technique to acheive goal and adopt testing.
   website: https://www.hk01.com
 
 - company: Green Tomato Limited
@@ -33,7 +45,7 @@ experience:
 - company: The Information Technology and Health Informatics Division, Head Office of the Hospital Authority (HA)
   position: Temporary ITD Summer Intern
   timeperiod: June 2015 - August 2015
-  description: Developing the Android mobile staff health record application (mSHR).
+  description: Developing the Android mobile staff health record application (mSHR), keen to know the operation in HA.
 
 education:
 - degree: Bachelor of Science in Computer Science
@@ -47,14 +59,10 @@ education:
 
 # skill level goes 0 to 100
 skills:
-- name: Amazon S3
 - name: CSharp
 - name: CSS3
 - name: Docker
 - name: ESNext
-- name: Firebase
-- name: GoogleTagManager
-- name: Google Vision
 - name: HTML5
 - name: Java
 - name: JavaScript
@@ -72,12 +80,12 @@ skills:
 projects:
 - name: HK01 Mobile App
   platform: ReactNative
-  description: providing news and multimedia lifestyle internet platform including running, charity
+  description: providing news and multimedia lifestyle internet platform including running, charity, events and ticketing
   url:  https://www.hk01.com/app
 
 - name: HK01 Account-System & Api Gateway
   platform: typescript + express
-  description: an backend system to store member information and provide related service, i.e. user login, third party login, get profile, send OTP with email and phone
+  description: an backend system to store member information and provide related service, i.e. user login, third party login, get profile, send OTP
 
 - name: Link Park & Dine
   platform: Android
@@ -103,13 +111,11 @@ projects:
 
 hobbies:
 - name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
+- name: Anime
+- name: Gym & Sports
+- name: Photographing
+- name: Travelling
+- name: hiking
 contact:
   email: somankit2000@gmail.com
   phone: 852 68916651
