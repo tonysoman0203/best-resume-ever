@@ -181,11 +181,11 @@
 
           <div class="section-content">
             <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item"
-              :href="project.url">
+              class="section-content__item">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
               <span class="section-content__text"> {{ project.description }} </span>
+              <span class="section-content__text section-content__link"> {{ project.url }} </span>
             </a>
           </div>
         </div>
@@ -395,6 +395,10 @@ a {
     &--light {
       font-size: 12px;
     }
+  }
+
+  &__link {
+    color: rgba(0, 0, 255, 0.59)
   }
 
   &__plain {
