@@ -10,6 +10,9 @@ const lang = {
     contributions: 'Contributions',
     about: 'About me',
     salary: 'Expected Salary',
-    available: 'Availability'
+    available: 'Availability',
+    knowledge: 'Knowledge',
+    career: 'Career Goal',
+    hobbies: 'Hobbies'
 };
 export default lang;
